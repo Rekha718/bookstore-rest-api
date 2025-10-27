@@ -31,14 +31,16 @@ A simple yet powerful **Bookstore Management API** built with **FastAPI**, demon
 
 ```
 bookstore_api/
- ├── main.py                    # Entry point for the FastAPI app
- ├── models.py                  # SQLAlchemy models
- ├── schemas.py                 # Pydantic schemas for validation
- ├── database.py                # Database connection and session management
- ├── books.db                   # SQLite database file
- ├── README.md                  # Project documentation
- ├── .gitignore                 # Ignored files for Git
+ ├── main.py                     # Entry point for the FastAPI app
+ ├── models.py                   # SQLAlchemy models
+ ├── schemas.py                  # Pydantic schemas for validation
+ ├── database.py                 # Database connection and session management
+ ├── books.db                    # SQLite database file
+ ├── README.md                   # Project documentation
+ ├── requirements.txt            # Python dependencies for FastAPI project
+ ├── .gitignore                  # Ignored files for Git
  └── Bookstore_Project_Report.pdf   # Project report (optional)
+
 ```
 
 ---
