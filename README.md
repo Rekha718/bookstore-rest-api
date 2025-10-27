@@ -109,9 +109,8 @@ Uses HTTPException for clear client feedback
 
 This project is open-source and available under the MIT License.
 
-👩‍💻 Author
+**Author**
 
-Rekha R
-📍 Bangalore, India
-💼 LinkedIn: https://www.linkedin.com/in/rekhar1/
-🧠 GitHub: https://github.com/Rekha718?tab=repositories
+**Rekha R**  
+📍 Bangalore, India  
+💼 [LinkedIn](https://www.linkedin.com/in/rekhar1) | 🧠 [GitHub](https://github.com/Rekha718)
