@@ -97,10 +97,11 @@ Once the server starts, open in your browser:
 ### ➕ Add a Book (`POST /books/`)
 ```json
 {
-  "title": "Clean Code",
-  "author": "Robert C. Martin",
-  "price": 499.00,
-  "quantity": 10
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "genre": "Fiction",
+  "price": 299.99,
+  "quantity": 15
 }
 ```
 
@@ -112,10 +113,11 @@ Once the server starts, open in your browser:
 ```json
 {
   "id": 1,
-  "title": "Clean Code",
-  "author": "Robert C. Martin",
-  "price": 499.00,
-  "quantity": 10
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "genre": "Fiction",
+  "price": 299.99,
+  "quantity": 15
 }
 ```
 
@@ -135,13 +137,6 @@ Once the server starts, open in your browser:
 - ⚠️ `400` for invalid operations  
 - 💬 Uses `HTTPException` for clear client feedback  
 
----
-
-## 🧾 **License**
-
-This project is open-source and available under the **MIT License**.
-
----
 
 ## 👩‍💻 **Author**
 
