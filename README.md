@@ -49,8 +49,8 @@ bookstore_api/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/bookstore_api.git
-cd bookstore_api
+git clone https://github.com/Rekha718/bookstore-rest-api
+cd bookstore-rest-api
 ```
 
 ### 2️⃣ Create a Virtual Environment
