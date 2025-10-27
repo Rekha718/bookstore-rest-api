@@ -53,14 +53,7 @@ git clone https://github.com/Rekha718/bookstore-rest-api
 cd bookstore-rest-api
 ```
 
-### 2️⃣ Create a Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
-```
-
-### 3️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -70,7 +63,8 @@ pip install -r requirements.txt
 pip freeze > requirements.txt
 ```
 
-### 4️⃣ Run the Application
+
+### 3️⃣ Run the Application
 ```bash
 uvicorn main:app --reload
 ```
