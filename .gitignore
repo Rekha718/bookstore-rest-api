@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor-specific files
+.vscode/        # VS Code settings
+.idea/          # IntelliJ IDEA settings
+*.sublime-project
+*.sublime-workspace
+
+# Logs and temporary files
+*.log
+*.tmp
+temp/
+
+# Database files
+*.sqlite3
+*.db
+*.bak
+
+# Configuration files with sensitive data (if not handled by environment variables)
+.env            # Environment variables file
+config.ini      # Example, if it contains sensitive info
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Uploaded files (if applicable)
+media/
+uploads/
+
+# Jupyter Notebook files (if used)
+.ipynb_checkpoints/
+
+# Operating System files
+.DS_Store       # macOS
+Thumbs.db       # Windows
