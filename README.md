@@ -1,87 +1,119 @@
-📚 Bookstore REST API using FastAPI
+# 📚 **Bookstore REST API using FastAPI**
 
-A simple yet powerful Bookstore Management API built with FastAPI, demonstrating CRUD operations, validation, and clean architecture using Pydantic, SQLAlchemy, and SQLite.
+A simple yet powerful **Bookstore Management API** built with **FastAPI**, demonstrating CRUD operations, data validation, and clean architecture using **Pydantic**, **SQLAlchemy**, and **SQLite**.
 
-🚀 Features
+---
 
-Create, Read, Update, and Delete (CRUD) books
+## 🚀 **Features**
+✅ Create, Read, Update, and Delete (**CRUD**) books  
+✅ Input validation using **Pydantic Schemas**  
+✅ Error handling with proper **HTTP responses**  
+✅ Persistent data storage using **SQLite**  
+✅ Modular and clean **folder structure**  
+✅ Auto-generated API documentation with **Swagger UI** and **ReDoc**
 
-Input validation using Pydantic Schemas
+---
 
-Error handling with proper HTTP responses
+## 🏗️ **Tech Stack**
 
-Persistent data storage using SQLite
+| Component      | Technology Used     |
+|----------------|--------------------|
+| **Framework**  | FastAPI            |
+| **Database**   | SQLite             |
+| **ORM**        | SQLAlchemy         |
+| **Validation** | Pydantic           |
+| **Language**   | Python 3.10+       |
+| **Docs**       | Swagger UI / ReDoc |
 
-Modular and clean folder structure
+---
 
-Auto-generated API documentation with Swagger UI and ReDoc
+## 📁 **Folder Structure**
 
-🏗️ Tech Stack
-Component	Technology Used
-Framework	FastAPI
-Database	SQLite
-ORM	SQLAlchemy
-Validation	Pydantic
-Language	Python 3.10+
-Documentation	Swagger UI / ReDoc
-📁 Folder Structure
+```
 bookstore_api/
- ├── main.py              # Entry point for the FastAPI app
- ├── models.py            # SQLAlchemy models
- ├── schemas.py           # Pydantic schemas for validation
- ├── database.py          # Database connection and session management
- ├── books.db             # SQLite database file
- ├── README.md            # Project documentation
- ├── .gitignore           # Ignored files for Git
+ ├── main.py                    # Entry point for the FastAPI app
+ ├── models.py                  # SQLAlchemy models
+ ├── schemas.py                 # Pydantic schemas for validation
+ ├── database.py                # Database connection and session management
+ ├── books.db                   # SQLite database file
+ ├── README.md                  # Project documentation
+ ├── .gitignore                 # Ignored files for Git
  └── Bookstore_Project_Report.pdf   # Project report (optional)
+```
 
-⚙️ Installation & Setup
-1️⃣ Clone the repository
+---
+
+## ⚙️ **Installation & Setup**
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/<your-username>/bookstore_api.git
 cd bookstore_api
+```
 
-2️⃣ Create a virtual environment
+### 2️⃣ Create a Virtual Environment
+```bash
 python -m venv venv
-source venv/bin/activate   # for macOS/Linux
-venv\Scripts\activate      # for Windows
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+```
 
-3️⃣ Install dependencies
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-
-If you don’t have a requirements.txt, you can generate it using:
-
+> 💡 If you don’t have a `requirements.txt`, generate it using:
+```bash
 pip freeze > requirements.txt
+```
 
-4️⃣ Run the application
+### 4️⃣ Run the Application
+```bash
 uvicorn main:app --reload
+```
 
-🌐 API Documentation
+---
 
-Once the server starts, open:
+## 🌐 **API Documentation**
 
-Swagger UI: http://127.0.0.1:8000/docs
+Once the server starts, open in your browser:
 
-ReDoc: http://127.0.0.1:8000/redoc
+- **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)  
+- **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
-🧩 API Endpoints
-Method	Endpoint	Description
-POST	/books/	Add a new book
-GET	/books/	Get all books
-GET	/books/{book_id}	Get a book by ID
-PUT	/books/{book_id}	Update a book
-DELETE	/books/{book_id}	Delete a book
-🧠 Example JSON
-➕ Add a Book (POST /books/)
+---
+
+## 🧩 **API Endpoints**
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| **POST** | `/books/` | Add a new book |
+| **GET** | `/books/` | Get all books |
+| **GET** | `/books/{book_id}` | Get a book by ID |
+| **PUT** | `/books/{book_id}` | Update a book |
+| **DELETE** | `/books/{book_id}` | Delete a book |
+
+---
+
+## 🧠 **Example JSON**
+
+### ➕ Add a Book (`POST /books/`)
+```json
 {
   "title": "Clean Code",
   "author": "Robert C. Martin",
   "price": 499.00,
   "quantity": 10
 }
+```
 
-✅ Example Responses
-201 Created
+---
+
+## ✅ **Example Responses**
+
+**201 Created**
+```json
 {
   "id": 1,
   "title": "Clean Code",
@@ -89,28 +121,37 @@ DELETE	/books/{book_id}	Delete a book
   "price": 499.00,
   "quantity": 10
 }
+```
 
-404 Not Found
+**404 Not Found**
+```json
 {
   "detail": "Book not found"
 }
+```
 
-🧰 Error Handling
+---
 
-Proper validation errors for invalid data types
+## 🧰 **Error Handling**
 
-404 for missing books
+- 🚫 Proper validation errors for invalid data types  
+- ❌ `404` for missing books  
+- ⚠️ `400` for invalid operations  
+- 💬 Uses `HTTPException` for clear client feedback  
 
-400 for invalid operations
+---
 
-Uses HTTPException for clear client feedback
+## 🧾 **License**
 
-🧾 License
+This project is open-source and available under the **MIT License**.
 
-This project is open-source and available under the MIT License.
+---
 
-**Author**
+## 👩‍💻 **Author**
 
 **Rekha R**  
-📍 Bangalore, India  
-💼 [LinkedIn](https://www.linkedin.com/in/rekhar1) | 🧠 [GitHub](https://github.com/Rekha718)
+📍 *Bangalore, India*  
+
+🔗 **Connect with me:**  
+- [💼 LinkedIn](https://www.linkedin.com/in/rekhar1/)  
+- [🧠 GitHub](https://github.com/Rekha718?tab=repositories)
